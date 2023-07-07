@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ɅSSIPɅRK</title>
+	<link rel="shortcut icon" href="/imagenes/logo1.png" type="image/x-icon"> 
+
+
+    <link rel="stylesheet" href="/carpeta.css/Ruleta.css">
+
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    
+</head>
+<body id="body">
+    
+    <section>
+		<div class="contenedor">
+			<h1>Concursantes</h1>
+			<div class="concursantes">
+				<canvas id="idcanvas" width="400" height="400"></canvas>
+				<br>
+				<button onclick="sortear()"><span id="idestado">Sortear</span></button>
+				<div class="mark-winner"></div>
+			</div>
+		</div>
+		<br>
+		<div class="botones">
+		<center><label for="texto">Ingrese Concursantes:</label>
+		<br>
+		<input type="text" id="texto" placeholder="Ingrese Concursantes" required></input>
+		<br>
+		<br>
+		<input class="agregar23" type="button" id="btnAgregarElemento" value="Agregar" onclick="agregarElemento(),actualizarArreglo()"></input>
+		<input class="agregar23" type="button" id="btnMostrarElemento" value="Eliminar" onclick="EliminarElemento(),actualizarArreglo()"></input>
+		</center>
+		</div>
+	</section>
+        <script src="/js/Ruleta.js"></script>
+
+</body>
+</html>

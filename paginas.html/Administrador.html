@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ɅSSIPɅRK</title>
+    <link rel="shortcut icon" href="/imagenes/logo1.png" type="image/x-icon"> 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <link rel="stylesheet" href="/carpeta.css/Adm,Guar,Usu.css">
+  <link rel="stylesheet" href="/carpeta.css/registros.css">
+
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+    
+    <header>
+        <div class="icon__menu">
+            <i class="fas fa-bars" id="btn_open"></i>
+        </div>
+        <section class="inicio">
+          <nav>
+              <ul class='nav-bar'>
+                  <li class='logo'><a href='#'><img src='/imagenes/LOGO_ASSIPARK_.png'/></a></li>
+                  <span class="menu">
+                      <li><a href="" class="color">Administrador <span id="nombreUsuario"></span></a></li>
+                    <div class="dropdown">
+                        <button class="circulo"><i class="fa-solid fa-car"></i></button>
+                        <div class="dropdown-content">
+                              <li><a href="#" onclick="cerrarSesion()">Salir</a></li>
+                          </div>
+                    </div>
+              </ul>
+          </nav>
+          <img class="fondo11" src="/imagenes/FONDO_PERFIL.png ">
+      </section>
+    </header>
+
+    <div class="menu__side" id="menu_side">
+
+        
+        <div class="name__page">
+            <section class="reloj">
+                <p class="dia" id="dia">---</p>
+                <p class="mes" id="mes">---</p>
+                <div class="hora" id="hora">
+                    <p>00</p>
+                    <p>00</p>
+                    <p>00</p>
+                </div>
+            </section>
+        </div>
+
+        <div class="options__menu">	
+
+            <a href="#" class="selected">
+                <div class="option">
+                    <i class="fas fa-home" title="Inicio"></i>
+                    <h4>Inicio</h4>
+                </div>
+            </a>
+
+            <a href="/paginas.html/crud.html">
+                <div class="option">
+                    <i class="far fa-address-card" title="Nosotros"></i>
+                    <h4>Usuarios</h4>
+                </div>
+            </a>
+            
+            
+            
+            
+            <a href="/paginas.html/Registro.html">
+                <div class="option">
+                    <i class="fa-solid fa-user-large"></i>                   
+                     <h4>Registro</h4>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="option">
+                    <i class="fa-solid fa-car"></i>                    
+                    <h4>Vehiculos</h4>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="option">
+                    <i class="fa-sharp fa-solid fa-city"></i>                                               
+                                          <h4>Apartamentos</h4>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="option">
+                    <i class="fa-solid fa-building-user"></i>
+                    <h4>Residentes</h4>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="option">
+                    <i class="fa-solid fa-car"></i>                    
+    <h4>Parqueadero</h4>
+                </div>
+            </a>
+
+            <a href="/paginas.html/Ruleta.html">
+                <div class="option">
+                    <i class="far fa-id-badge" title="Contacto"></i>
+                    <h4>rueda de la fortuna</h4>
+                </div>
+            </a>
+
+        </div>
+        
+
+    </div>
+
+   <div>
+
+            <div class="cuadros">
+                <h1 class="titulo"> <img class="ico" src="/imagenes/diary.svg"> Organizacion Parqueadero Carros</h1>
+                <p class="resumen">Aqui podra observar la organizacion de los parqueaderos por apartamentos y bloque de todo el conjunto residencial.</p>
+                <div id="container">
+                    <div class="box"><i class="fas fa-car"><br>1</i></div>
+                    <div class="box"><i class="fas fa-car"><br>2</i></div>
+                    <div class="box"><i class="fas fa-car"><br>3</i></div>
+                    <div class="box"><i class="fas fa-car"><br>4</i></div>
+                    <div class="box"><i class="fas fa-car"><br>5</i></div>
+                    <br>
+                    <div class="box"><i class="fas fa-car"><br>6</i></div>
+                    <div class="box"><i class="fas fa-car"><br>7</i></div>
+                    <div class="box"><i class="fas fa-car"><br>8</i></div>
+                    <div class="box"><i class="fas fa-car"><br>9</i></div>
+                    <div class="box"><i class="fas fa-car"><br>10</i></div>
+                  </div>    
+               
+        </div>
+
+        <div>
+    
+
+            <div class="cuadros">
+                <h1 class="titulo"> <img class="ico" src="/imagenes/diary.svg"> Organizacion Parqueadero Motos</h1>
+                <p class="resumen">Aqui podra observar la organizacion de los parqueaderos por apartamentos y bloque de todo el conjunto residencial.</p>
+                <div id="container">
+                    <div class="box"><i class="fas fa-motorcycle"><br>1</i></div>
+                    <div class="box"><i class="fas fa-motorcycle"><br>2</i></div>
+                    <div class="box"><i class="fas fa-motorcycle"><br>3</i></div>
+                    <div class="box"><i class="fas fa-motorcycle"><br>4</i></div>
+                    <div class="box"><i class="fas fa-motorcycle"><br>5</i></div>
+                    <br>
+                    <div class="box"><i class="fas fa-motorcycle"><br>6</i></div>
+                    <div class="box"><i class="fas fa-motorcycle"><br>7</i></div>
+                    <div class="box"><i class="fas fa-motorcycle"><br>8</i></div>
+                    <div class="box"><i class="fas fa-motorcycle"><br>9</i></div>
+                    <div class="box"><i class="fas fa-motorcycle"><br>10</i></div>
+                  </div>    
+               
+        </div>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+        <script src="/js/registros.js"></script>
+        <script src="/js/scrip.js"></script>
+        <script src="/js/guardar.js"></script>
+        <script src="/js/configuracion.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+@import url('https://fonts.googleapis.com/css2? family= Comfortaa:wght@300;400;500;700 & family= Montserrat:ital,wght@0,500;1,900 & family= Raleway: peso@300;400;600 & mostrar=cambiar');
+
+:root{
+    --dark: #627eb3;
+    --blanco: #ffffff;
+}
+body{
+    font-family: 'Comforta', cursive;
+}
+
+.navbar{
+    background-color: var(--dark);
+}
+
+.navbar-item{
+color: var(--blanco);
+height: 8vh;
+}
+
+/*main*/
+.main-content{
+    height: 89vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.crud-container{
+    width: 80%;
+    padding: 3rem 3rem;
+    overflow: auto;
+    box-shadow: 0 0 1rem 0 rgb(0, 0, 0, 0.4);
+    border-radius: 0.5rem;
+}
+.crud-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem 1rem 2rem;
+    border-bottom: 1px solid;
+}
+.crud-container h1{
+    font-weight: bold;
+    font-size: 24px;
+    
+}
+
+.button span{
+    margin-left: 10px;
+}
+
+.modal-card{
+margin-top: 90px;
+}
+
+
+
+    @media screen and (max-width: 1375px){
+        .crud-container h1{
+            font-weight: bold;
+            font-size: 15px;
+            
+        }
+        
+    }
+    
+    @media screen and (max-width: 1730px){
+        
+        .crud-container{
+            height: 98%;          
+        }
+        
+    }

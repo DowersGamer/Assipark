@@ -1,0 +1,707 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;     
+    background-color: #F8F9F9;
+
+
+}
+
+                        /**********************************
+                                         menu
+                        /*********************************/
+
+
+header {
+    padding: 1px;
+    margin: auto;
+    width: 100%;
+    height: 969px;
+    --color1: #FFF ;
+    background: -webkit-linear-gradient(to left, #29cef5, #c5c4ca);  
+    background: linear-gradient(to left, #29cef5, #5533ff);
+
+}
+
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    top: 0px;
+    left: 0%;
+    background: -webkit-linear-gradient(to left, #29cef5, #c5c4ca);  
+    background: linear-gradient(to left, #29cef5, #5533ff);    
+    padding: 30px 20px;
+    position: fixed;
+    z-index: 2
+
+
+}
+
+
+
+.logo img {
+    height: 40%;
+    width: 50%;
+    margin-left: 50px;
+
+}
+
+
+
+.menu {
+    display: flex;
+    width: 150%;
+    margin-right: -50px;
+    font-size: 15px;
+    max-width: 1000px;
+
+
+}
+.menu li {
+    margin: 10px;
+}
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color1);
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+
+    text-transform: uppercase;
+}
+
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color1);
+    transition: 0.15s ease-in-out;
+}
+.menu li a:hover:after {
+    width: 100%;
+}
+.btn{
+    width: 150px;
+    height: 40px;
+    background: #128ff5;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 8px;
+    transition: 0.2s ease;
+    cursor: pointer;
+    position: relative;
+    top: -10px;
+    left: 20PX;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+                            /**********************************
+                                    menu Haburguesa
+                            /*********************************/
+
+.open-menu , .close-menu {
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu {
+    top: 40px;
+    right: 20px;
+}
+#check {
+    display: none;
+}
+
+                            /**********************************
+                                    Primera hoja
+                            /*********************************/
+
+.Inicio{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    color: #fff;
+    margin-top: 300px;
+
+}
+
+.Inicio__sobre{
+   	padding: 1rem 10PX;
+    font-size: 30px;
+    line-height: 1;
+    margin-left: 150PX;
+    margin-top: -20px;  
+}
+
+.Titulo{
+    position: relative;
+    top: -50px;
+}
+
+.Inicio__Titulo{
+    margin: 20px 0;
+    line-height: 1.3;
+    font-weight: 300;
+    font-size: 30PX;
+    
+    
+}
+
+.park{
+    position: relative;
+    right: 10px;
+    width: 800px;
+    margin-top: -100px;
+}
+                            /**********************************
+                                    Segunda hoja
+                            /*********************************/
+
+
+.Acerca__de{
+    padding: 1rem 10PX;
+    font-size: 35px;
+    line-height: 1.4;
+    margin-left: -100PX;
+    margin-top: -150px;
+}
+
+.EDIFICIO{
+    transform: scaleX(-1);
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 100px;
+}
+
+
+.Acerca__de{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    place-items: center;
+    color: #fff;
+    padding: 10rem 10PX;
+    font-size: 35px;
+    line-height: 1.4;
+    margin-left: 5PX;
+    margin-top: -150px;
+}
+
+.Acerca__texto{
+   	padding: 25rem 10PX;
+    font-size: 35px;
+    line-height: 1.4;
+    margin-left: -250PX;
+    margin-top: -100px; 
+}
+
+.Acerca__Titulo{
+    color: #0b0a11;
+    margin: -40px 0;
+    font-size: 3ch;
+    margin-left: 190px;
+
+}
+
+.Acerca__contenido{
+    margin: 40px 0px;
+    color: #60aed3;
+    line-height: 1.5;
+    font-size: 1.2CH;
+    max-width: 800px;
+    margin-left: 190px;
+}
+
+                         /**********************************
+                                    Tercera hoja
+                        /*********************************/
+                    
+.Modulos__Titulo{
+	padding: 15rem 0px;
+    margin-top: -450px;   
+}
+
+.Modulo__Titlo{
+    padding: 0px;
+	text-align: center;
+    padding-bottom: 1rem;
+    color: #030303;
+    
+}
+
+.Modulo__Cuadros{
+    width:100%;
+    margin: 10px auto;
+    padding: 50px;
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    
+    
+
+}
+
+
+.Caja:hover{
+    -webkit-transform:scale(1.3);transform:scale(1);
+    background-color: #fefefe;
+	padding: 4rem 1rem;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 5px 5px 5px 0px rgb(0 0 0 / 6%);
+    font-size: 30px;
+    border: #101010 solid 1px;
+
+}
+.Caja {
+    overflow:hidden;
+    padding: 30px;
+
+}
+
+.Caja img{ 
+	width: 100px;
+    padding: 25px;
+    width: 100px;
+    background-color: #cdf4f4;
+    border-radius: 40px;    
+}
+
+.Caja p{
+	text-align: justify;
+    font-size: 20px;
+}
+
+                            /**********************************
+                                        Cuarta hoja
+                            /*********************************/
+
+
+.Funcionalidades__Titulo{
+	padding: 8rem 0px;
+    margin-top: -40px;   
+}
+
+.Funcionali__Titulo{
+    padding: 0px;
+	text-align: center;
+    padding-bottom: -10rem;
+    color: #030303; 
+}
+
+.Funcionalidades__cuadros{
+    width: 80%;
+    margin: 10px auto;
+    padding: 50px;
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.Caja2:hover{
+    -webkit-transform:scale(1.3);transform:scale(1);
+    background-color: #fefefe;
+	padding: 3rem 1rem;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 5px 5px 5px 0px rgb(0 0 0 / 6%);
+    font-size: 30px;
+    border: #101010 solid 1px;
+
+}
+
+.Caja2{
+    overflow:hidden;
+    padding: 30px;
+
+
+}
+
+.Caja2 img{ 
+	width: 100px;
+    padding: 25px;
+    width: 100px;
+    background-color: #cdf4f4;
+    border-radius: 40px;  
+}
+
+.Caja2 p{
+	text-align: justify;
+    font-size: 20px;
+}
+
+                            /**********************************
+                                        Quinta hoja
+                            /*********************************/
+                
+.Ventajas__Titulo{
+	padding: 8rem 0px;
+    margin-top: -40px;  
+}
+
+.Ventaja__Posicion{
+    padding: 0px;
+	text-align: center;
+    padding-bottom: -10rem;
+    color: #030303;   
+}
+
+.container-ventajas{
+    width: 70%;
+    margin: 10px auto;
+    padding: 10px;
+    display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    text-align: center; 
+}
+
+h3{
+	color: #000000;
+	margin: 10px 0;
+}
+
+.Caja3{
+   
+    background-color: #dbf5f3;
+	padding: 4rem 1rem;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 5px 5px 5px 0px rgb(0 0 0 / 6%);
+}
+.Caja3 img{ 
+	width: 100px;
+}
+
+.Caja3 h3{
+    
+	color: #000000;
+	margin: 10px 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+.Caja3 p{
+	text-align: center;
+    line-height: 1.5;
+}
+
+                            /**********************************
+                                        Sexta hoja
+                            /*********************************/
+
+.Equipo__Titulo{
+	padding: 9rem 0px;
+    margin-top: -100px;
+    color: #0f0c0c;    
+}
+
+.Equipo__posicion{
+    padding: 0px;
+	text-align: center;
+    padding-bottom: -10rem;
+    color: #030303;  
+}
+
+.container-Mienbros{
+    width: 80%;
+    margin: 150px auto;
+    padding: 10px;
+    display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+    gap: 150px;
+    text-align: center;
+    background-color: #94abb5;
+}
+
+.Caja4:hover{
+    background-color: #dbf5f3;
+	padding: 3rem 1rem;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 5px 5px 5px 0px rgb(0 0 0 / 6%);
+    border: #4b7296 solid 1px;
+    
+}
+
+
+.Caja4 img{ 
+    
+    position: relative;
+    top: -70px;
+    padding: 10px;
+    margin: 2px;
+    width: 50px;
+    font-size:18px;
+    background:white;
+    border: #4b7296 solid 1px;
+    border-radius: 50px;
+    background-color: #cdf4f4;
+
+
+}
+
+.Caja4 h3{
+    
+	color: #000000;
+	margin: 10px 0;
+    text-align: center;
+    margin-top: -50px;
+    font-size: 20px;
+}
+
+.Caja4 p{
+	text-align: center;
+    line-height: 1.5;
+}
+
+                            /**********************************
+                                        Sectima hoja
+                            /*********************************/
+
+.Contactar__Titulo{
+	padding: 2rem 0px;
+    margin-top: -100px;
+    color: #0f0c0c;
+}
+
+.Cantactar__Posicion{
+    padding: 0px;
+	text-align: center;
+    padding-bottom: -10rem;
+    color: #030303;   
+}
+.footer{
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.472), rgba(255, 255, 255, 0.365));
+    overflow: hidden;
+	padding: 5rem 0px;
+    border-radius: 1em;
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: .6em;
+    animation: mostrar 1.5s ease-in-out;
+}
+
+@keyframes mostrar{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.main_contacto{
+    overflow: hidden;
+    border-radius: 1em;
+    background: -webkit-linear-gradient(to left, #29cef5, #c5c4ca);  
+    background: linear-gradient(to left, #29cef5, #5533ff);    display: flex;
+    
+}
+
+img{
+    margin: auto;
+    width: 80%;
+    max-width: 60vw;
+    
+    
+}
+
+.padre_contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5em;
+    padding: 3em .7em;
+    text-align: center;
+}
+
+.hijo_from{
+    display: grid;
+    justify-items: center;
+    gap: 1.5em;
+}
+
+.from_estilos{
+    width: 80%;
+    max-width: 500px;
+    outline: none;
+    border: none;
+    padding: 1em;
+    font: inherit;
+    border-radius: .6em;
+}
+
+.from_estilos--send{
+    background-color: #DC3F31;
+    color: #fff;
+    font-weight: 600;
+}
+
+.parafo{
+    margin: .3em 0;
+}
+
+                            /****************************************************************
+                                  Este es el codigo de la pagina para hacerla responsive                           
+                            /****************************************************************/
+
+
+@media screen and (max-width:1364px){
+ 
+    .Inicio{
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr;
+        gap: 80px;
+    }
+
+    .Inicio__sobre{
+        width: 100%;
+        margin-top: -10px;
+        margin-left: 2PX;
+    }
+
+    .Inicio__Titulo{
+        font-size: 20PX;
+    }
+
+    .title{
+        font-size: 40px;
+        max-width: 1000px;
+    }
+
+    .Acerca__de{
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr;
+        gap: 80px;
+    }
+
+    .Acerca__texto{
+        margin-top: -420px;
+        margin-left: -190PX;
+    }
+
+    .Acerca__contenido{
+        font-size: 20PX;
+    }
+
+    .Acerca__Titulo{
+        font-size: 40px;
+    }
+
+    .park{
+        width: 100%;
+        margin-top: -80px;
+        margin-left: 0px;           
+    }
+
+    .EDIFICIO{
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 80px;
+    }
+
+    .Modulo__Cuadros{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .services{
+        margin-top: -500px;
+
+    }
+
+    .Funcionalidades__cuadros{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .container-ventajas{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .container-Mienbros{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+    
+
+                            /****************************************************************
+                                  Este es el menu hamburguesa para hacerlo responsive                           
+                            /****************************************************************/
+
+@media(max-width: 1513px){
+    
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        height: 100vh;
+        position: fixed;
+        margin: 0px;
+
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background: -webkit-linear-gradient(to left, #29cef5, #c5c4ca);  
+        background: linear-gradient(to left, #29cef5, #5533ff);
+        transition: all 0.2s ease-in-out;
+
+    }
+    .logo{
+        position: relative;
+        right: 50px;
+    }
+
+    .menu li {
+        margin-top: 40px;
+    }
+
+    .menu li a {
+        
+        padding: 10px;
+    }
+
+    .open-menu , .close-menu {
+        display: block;
+        
+    }
+
+    #check:checked ~ .menu {
+        right: 0;
+    }
+   
+}
+}

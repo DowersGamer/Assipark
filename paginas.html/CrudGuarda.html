@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ɅSSIPɅRK</title>
+    <link rel="shortcut icon" href="/imagenes/logo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="/carpeta.css/Crud.css">
+    <link rel="stylesheet" href="/carpeta.css/Adm,Guar,Usu.css">
+    <link rel="stylesheet" href="/carpeta.css/registros.css">
+
+    <script src="https://kit.fontawesome.com/c95f5e00b0.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    .button.is-danger{
+        display: none;
+       
+    }
+    .is-warning{
+        display: none;
+    }
+    .is-success{
+        display: none;
+    }
+    
+</style>
+<body id="body">
+    
+  <header>
+    <div class="icon__menu">
+        <i class="fas fa-bars" id="btn_open"></i>
+    </div>
+    <section class="inicio">
+      <nav>
+          <ul class='nav-bar'>
+              <li class='logo'><a href='#'><img src='/imagenes/LOGO_ASSIPARK_.png'/></a></li>
+              <span class="menu">
+                  <li><a href="" class="color">Guarda <span id="nombreUsuario"></span></a></li>
+                <div class="dropdown">
+                    <button class="circulo"><i class="fa-solid fa-car"></i></button>
+                    <div class="dropdown-content">
+                          <li><a href="#" onclick="cerrarSesion()">Salir</a></li>
+                      </div>
+                </div>
+          </ul>
+      </nav>
+  </section>
+</header>
+
+    <div class="menu__side" id="menu_side">
+
+        
+        <div class="name__page">
+            <section class="reloj">
+                <p class="dia" id="dia">---</p>
+                <p class="mes" id="mes">---</p>
+                <div class="hora" id="hora">
+                    <p>00</p>
+                    <p>00</p>
+                    <p>00</p>
+                </div>
+            </section>
+        </div>
+
+        <div class="options__menu">	
+
+            <a href="/paginas.html/guarda.html" class="selected">
+                <div class="option">
+                    <i class="fas fa-home" title="Inicio"></i>
+                    <h4>Inicio</h4>
+                </div>
+            </a>
+
+            
+
+            <a href="/paginas.html/CrudGuarda.html">
+                <div class="option">
+                    <i class="far fa-address-card" title="Nosotros"></i>
+                 <h4>usuarios</h4>
+                </div>
+            </a>
+
+            <a href="/paginas.html/Ruleta.html">
+                <div class="option">
+                    <i class="far fa-id-badge" title="Contacto"></i>
+                    <h4>rueda de la fortuna</h4>
+                </div>
+            </a>
+
+        </div>
+        
+
+    </div>
+
+   <div>
+
+<main class="main-content">
+    <div class="crud-container">
+      <div class="crud-header">
+        <h1>Buscar Residentes</h1>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Buscar">
+            <button id="search-button"><i class="fas fa-search"></i></button>
+          </div>
+        
+          
+        <button class="button is-success" id="openRegister">
+          <i class="fas fa-plus"></i>
+          <span>Registrate Aqui</span>
+        </button>
+      </div>
+      <table class="table">
+
+        <thead>
+          <tr>
+            <th>Documento de identidad</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Telefono</th>
+            <th>Celular</th>
+            <th>Correo</th>
+            <th>Opciones</th>
+          </tr>
+        </thead>
+        <tbody id="studentsTable"></tbody>
+      </table>
+     
+    </div>
+  </main>
+
+  <div class="modal" id="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Registrar Usuario</p>
+        <button class="delete" aria-label="close" id="closeRegisterModal"></button>
+      </header>
+      <section class="modal-card-body">
+        <form id="register-form">
+          <div class="field">
+            <label class="label">Documento de identidad</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Cedula" name="Cedula">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Nombre</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Escribe tu nombre" name="Nombre">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Apellido</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Escribe tu apellido" name="Apellido">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Telefono</label>
+            <div class="control has-icons-left">
+              <input class="input" type="tel" placeholder="Escribe tu numero de telefono" name="cel">
+              <span class="icon is-small is-left">
+                <i class="fas fa-phone"></i>
+              </span>
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Celular</label>
+            <div class="control has-icons-left">
+              <input class="input" type="Celular" placeholder="Escribe tu numero de telefono" name="Celular">
+              <span class="icon is-small is-left">
+                <i class="fas fa-phone"></i>
+              </span>
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Correo Electrónico</label>
+            <div class="control has-icons-left">
+              <input class="input" type="email" placeholder="Escribe tu correo electrónico" name="email">
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+            </div>
+          </div>
+         
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success" type="submit">
+          <i class="fas fa-save"></i>
+          <span>Guardar Usuario</span>
+        </button>
+        </form>
+      </footer>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-update">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Actualizar Usuario</p>
+        <button class="delete" aria-label="close" id="closeUpdateModal"></button>
+      </header>
+      <section class="modal-card-body">
+        <form id="update-form">
+          <div class="field">
+            <label class="label">Documento de identidad</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Cedula" name="Cedula">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Nombre</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Escribe tu primer apellido" name="Nombre">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Apellido</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Escribe tu segundo apellido" name="Apellido">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Telefono</label>
+            <div class="control has-icons-left">
+              <input class="input" type="tel" placeholder="Escribe tu numero de telefono" name="cel">
+              <span class="icon is-small is-left">
+                <i class="fas fa-phone"></i>
+              </span>
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Celular</label>
+            <div class="control has-icons-left">
+              <input class="input" type="tel" placeholder="Escribe tu numero de telefono" name="Celular">
+              <span class="icon is-small is-left">
+                <i class="fas fa-phone"></i>
+              </span>
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Correo Electrónico</label>
+            <div class="control has-icons-left">
+              <input class="input" type="email" placeholder="Escribe tu correo electrónico" name="email">
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+            </div>
+          </div>
+          <input type="hidden" name="uid" id="update-uid">
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success" type="submit">
+          <i class="fas fa-save"></i>
+          <span>Actualizar Usuario</span>
+        </button>
+        </form>
+      </footer>
+    </div>
+  </div>
+  
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+<script src="/js/crudGuarda.js"></script>
+<script src="/js/scrip.js"></script>
+<script src="/js/guardar.js"></script>
+<script src="/js/configuracion.js"></script>
+
+
+</body>
+</html>
