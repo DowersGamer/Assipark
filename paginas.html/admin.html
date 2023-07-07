@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contenido según el rol del usuario</title>
+</head>
+<body>
+  <h1>Bienvenido</h1>
+  
+  <!-- Elementos visibles para ambos roles -->
+  <p>Este contenido es visible para todos los usuarios.</p>
+  
+  <!-- Elementos visibles solo para el administrador -->
+  <div id="adminContent" style="display: none;">
+    <p>Este contenido es visible solo para el administrador.</p>
+    <button id="adminButton">Acción de administrador</button>
+  </div>
+  
+  <!-- Elementos visibles solo para el usuario -->
+  <div id="userContent" style="display: none;">
+    <p>Este contenido es visible solo para el usuario.</p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,462 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    background:linear-gradient(to right,#5533ff ,#29cef5);
+    width: 100%;
+}
+
+.logo img {
+    height: 80%;
+    width: 100%;
+    margin-top: -10px;
+    margin-left: 50px;
+
+}
+
+
+.sidebar{
+    position: absolute;
+    margin-top: -33px;
+    width: 300px;
+    height: 800px;
+    background: white; 
+    box-shadow: 7px 13px 10px #808080;
+    position: fixed;
+
+
+}
+
+
+input{
+    position: relative;
+    top: -200px;
+}
+
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color:grey;
+    padding-left: 40px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+ul li:hover a{
+    background-color: #0991ec;
+    transition: 0.5s;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    width: 100%;
+
+}
+.img1{
+    width: 100%;
+}
+.ico{
+    position: relative;
+    top: 5px;
+}
+.reloj{
+    position: relative;
+    font-family: arial;
+    text-align: center;
+    color: grey;
+    width: 100%;
+}
+.reloj .dia{
+    font-size: 20px;
+}
+.reloj .mes{
+    font-size: 40px;
+
+}
+.reloj .hora{
+    display: flex;
+    justify-content: center;
+
+
+  }
+.reloj .hora p{
+    font-size: 60px;
+    padding: 10px;
+    margin: 0px 5px;
+  }
+.barra{
+    background-color:#04a4ec;
+    display: flex;
+    position: relative;
+    width: auto; 
+    height: 90px;
+    box-shadow: 2px 3px 10px #808080;
+    box-sizing: border-box;
+
+}
+.usuario{
+    position: relative;
+    margin-left: 900px;
+    margin-top: 30px;
+    color: white;
+    font-size: 20px;
+}
+
+.waos{
+    position: relative;
+    background-color: grey;
+    color: black;
+    margin-top: 15px;
+    margin-left: 30px;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    border-radius: 40px;
+    justify-content: center;
+}
+.fondo{
+    position: absolute;
+    margin-left: 1380px;
+    margin-top: 150px;
+}
+.cuadros{
+    position: absolute;
+    width:52%;
+    left: 350px;
+    top: 150px;
+    background-color: rgb(240, 239, 239);
+   
+}
+.titulo{
+    background-color: #29cef5;
+    height: 100px;
+    text-align: center;
+    font-family: georgia;
+}
+
+
+.resumen{
+    background-color: rgb(240, 239, 239);
+    text-align: center;
+    height: 100px;
+    font-family: georgia;
+}
+
+.titulo2{
+    position:relative;
+    
+    background-color: #29cef5;
+    height: 100px;
+    width:100%;
+    text-align: center;
+    font-family: georgia;
+}
+
+.resumen2{
+    position:relative;
+    background-color: rgb(240, 239, 239);
+    text-align: center;
+    width:100%;
+    height: 100px;
+    font-family: georgia;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .grid-top,
+  .grid-bottom {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 20px;
+    margin: 30px 0;
+  }
+  
+  .grid-item {
+    background-color: grey;
+    border: 1px solid rgb(240, 239, 239);;
+    border-radius: 5px;
+    padding: 50px;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  button {
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: grey;
+    color: #fff;
+    border: none;
+  }
+  
+  button:hover {
+    background-color: #1861a8;
+  }
+
+@media screen and (max-width:8000px){
+    .usuario {
+        margin-left:auto;
+    }
+    .fondo{
+        left: auto;
+    
+    }
+}
+
+@media screen and (max-width:1900px){
+    .fondo{
+        height: 200%;
+    }
+
+}
+
+@media screen and (max-width:1850px){
+    .fondo{
+        position: absolute;
+        height: 200%;
+        left: -60px;
+    }
+
+}
+@media screen and (max-width:1800px){
+    .fondo{
+        position: absolute;
+        height: 190%;
+        left: -70px;
+    }
+
+}
+@media screen and (max-width:1750px){
+    .fondo{
+        position: absolute;
+        height: 180%;
+        left: -100px;
+    }
+
+}
+@media screen and (max-width:1700px){
+    .fondo{
+        position: absolute;
+        height: 170%;
+        left: -120px;
+    }
+
+}
+@media screen and (max-width:1650px){
+    .fondo{
+        position: absolute;
+        height: 160%;
+        left: -150px;
+    }
+
+}
+@media screen and (max-width:1600px){
+    .fondo{
+        position: absolute;
+        height: 150%;
+        left: -180px;
+    }
+
+}
+@media screen and (max-width:1550px){
+    .fondo{
+        position: absolute;
+        height: 140%;
+        left: -200px;
+    }
+
+}
+@media screen and (max-width:1500px){
+    .fondo{
+        position: absolute;
+        height: 130%;
+        left: -230px;
+    }
+
+}
+@media screen and (max-width:1450px){
+    .fondo{
+        position: absolute;
+        height: 120%;
+        left: -270px;
+    }
+
+}
+
+@media screen and (max-width:1400px){
+    .fondo{
+        position: absolute;
+        height: 120%;
+        left: -2000px;
+    }
+    .cuadros{
+        position: absolute;
+        left: 100px;
+        width: 1100px;
+    
+    }
+    .logo1{
+        margin-left: 50px;
+    }
+    .sidebar{
+        position:relative;
+        top: -18px;
+        width: 300px;
+        left: -30px;
+        height: 100%;
+        background: white; 
+        box-shadow: 7px 13px 10px #944141;
+        transition: all .5s ease;
+    }
+    
+    
+    label #btn,label #cancel{
+        position: absolute;
+        cursor: pointer;
+        background: #093eec;
+        border-radius: 3px;
+    }
+    
+    label #cancel{
+        left: 15px;
+        top: 5px;
+        font-size: 35px;
+        color: #c40f0f;
+        padding: 4px 9px;
+        transition: all .5s;
+    
+    }
+    
+    #check:checked ~ .sidebar{
+        left: 0;
+    }
+
+}
+
+@media screen and (max-width:1028px){
+    .logo2{
+        position: relative;
+        margin-left: -10000px;
+    }
+
+}
+
+@media screen and (max-width:1300px){
+    .cuadros{
+        position: absolute;
+        width: 1100px;
+        left: 100px;
+    }
+    .logo1{
+        margin-left:100px;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .cuadros{
+        position: absolute;
+        left: 100px;
+    }
+}
+
+@media screen and (max-width:1100px){
+    .cuadros{
+        position: absolute;
+        width: 900px;
+        left: 80px;
+    }
+    .logo1{
+        margin-left: 130px;
+    }
+}
+@media screen and (max-width:1000px){
+    .cuadros{
+        position: absolute;
+        width: 800px;
+        left: 80px;
+    }
+    .logo1{
+        margin-left:100px;
+    }
+}
+@media screen and (max-width:900px){
+    .cuadros{
+        position: absolute;
+        width: 700px;
+        left: 100px;
+    }
+    .logo1{
+        margin-left:100px;
+    }
+}
+@media screen and (max-width:800px){
+    .cuadros{
+        position: absolute;
+        width: 600px;
+        left: 100px;
+    }
+}
+@media screen and (max-width:700px){
+    .cuadros{
+        position: absolute;
+        width: 500px;
+        left: 100px;
+    }
+}
+@media screen and (max-width:600px){
+    .cuadros{
+        position: absolute;
+        width: 500px;
+        left: 30px;
+    }
+    .usuario{
+        position: relative;
+        margin-top: -100px;
+
+    }
+    .logo1{
+        margin-left: 240px;
+    }
+}
+@media screen and (max-width:500px){
+    .cuadros{
+        position: absolute;
+        width: 400px;
+        left:10px;
+    }
+    .logo1{
+        margin-left:160px;
+    }
+}
+@media screen and (max-width:400px){
+    .cuadros{
+        position: absolute;
+        width: 300px;
+        left: 40px;
+    }
+    .logo1{
+        margin-left:140px;
+    }
+}
+@media screen and (max-width:300px){
+    .cuadros{
+        position: absolute;
+        width: 200px;
+        left: 50px;
+    }
+    .logo1{
+        margin-left:100px;
+    }
+}

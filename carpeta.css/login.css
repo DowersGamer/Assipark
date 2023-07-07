@@ -1,0 +1,74 @@
+body {
+    font-family: Georgia;
+    margin: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow:hidden;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+*{
+    box-sizing: border-box;
+}
+.contenedor{
+    width: 100%;
+    padding: 5px;
+}
+.formulario{
+    background: #fff;
+    margin-top: 10px;
+    padding: 5px;
+    position: relative;
+    top: -1250px;
+    left: 200px;
+}
+h1{
+    text-align: center;
+    color: #53585a;
+    font-size: 40px;
+}
+input[type="text"]
+input[type="password"]{
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+}
+.input-contenedor{
+    margin-bottom: 15px;
+}
+.button{
+    border: none;
+    width: 50%;
+    color: white;
+    font-size: 20px;
+    background: #5caaeb;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.button:hover{
+    background: #223094;
+}
+p{
+    text-align: center;
+}
+@media(min-width:768px)
+{
+    .formulario{
+        margin: auto;
+        width: 500px;
+        margin-top: 150px;
+        border-radius: 2%;
+    }
+}
+.img2{
+    position: relative;
+    top: -650px;
+    left: 65px;
+}
+.cir{
+    position: relative;
+    top: -30px;
+}
